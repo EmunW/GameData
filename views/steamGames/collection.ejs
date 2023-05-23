@@ -1,4 +1,60 @@
 <% layout('layouts/boilerplate') %>
-
-<h1>MAIN</h1>
-<img src="<%= player.avatar %>">
+<section class="container-fluid px-0 content">
+    <div class="row align-items-center">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 text-center">
+            <img class="steam-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/768px-Steam_icon_logo.svg.png" alt="">
+            <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+                <p class="lead">A list of some of my favorite games available on steam in no particular order. I haven't played some of these in awhile but I had a lot of fun with them.</p>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+  </section>
+<section class="container-fluid p-0">
+    <div class="row align-items-center content game-listing">
+        <div class="col-md-6 order-2 order-md-1">
+            <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/0106/IyY3JSzHNCVoh7FultMPaE8F.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 summary my-0">
+                    <h1>MONSTER HUNTER WORLD</h1>
+                    <p class="lead">Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living,
+                        breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone or in co-op with up to three other players, 
+                        and use materials collected from fallen foes to craft new gear and take on even bigger, badder beasts!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center content game-listing my-0">
+        <div class="col-md-6 order-2">
+            <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_OmegaStrikers.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 summary mb-5 mb-md-0">
+                    <h1>OMEGA STRIKERS</h1>
+                    <p class="lead">Smash opponents off the arena and score goals in this lightning-fast 3v3 footbrawler. Sling slimes, toss tofu, and rocket boost to victory as one of 15+ stylish Strikers. Squad up with friends and outplay your rivals to become an Omega Striker.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center content game-listing">
+        <div class="col-md-6 order-2 order-md-1">
+            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000019795/081425533fd5a75ad96eb4333f260edf690b91110402ac801e07fd332035da8e" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 summary mb-5 mb-md-0">
+                    <h1>DON'T STARVE TOGETHER</h1>
+                    <p class="lead">Fight, Farm, Build and Explore Together in the standalone multiplayer expansion to the uncompromising wilderness survival game, Don't Starve.
+                        Enter a strange and unexplored world full of odd creatures, hidden dangers, and ancient secrets. Gather resources to craft items and build structures that match your survival style. Play your way as you unravel the mysteries of "The Constant".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

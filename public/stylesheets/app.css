@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(27, 28, 66);
+    color: white;
+}
+
+.summary{
+    color: white;
+}
+
+.lead{
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.content{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.steam-icon{
+    width: 300px;
+    height: 300px;
+}
+
+.game-listing:nth-child(odd){
+    background-color: rgb(22, 22, 68);
+}

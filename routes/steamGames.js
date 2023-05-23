@@ -5,6 +5,6 @@ const collectionController = require('../controllers/collection');
 
 
 router.route('/')
-    .get(catchAsync(collectionController.getImages))
+    .get(collectionController.getImages)
 
 module.exports = router;

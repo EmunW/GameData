@@ -31,7 +31,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const steamGamesRoutes = require('./routes/steamGames');
-app.use('/main', steamGamesRoutes);
+app.use('/games', steamGamesRoutes);
+const playersRoutes = require('./routes/players');
+app.use('/players', playersRoutes);
 
 app.get('/', async (req, res) => {
     const ret = await axios.get(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${steamKey}&steamids=76561198229001836`);
