@@ -1,0 +1,31 @@
+<% layout('layouts/boilerplate') %>
+
+<section class="container-fluid px-0 content">
+    <div class="row align-items-center">
+        <h1 class="text-center">Latest Updates - Automatically retrieves the latest updates from certain games</h1>
+    </div>
+</section>
+
+<section class="container-fluid game-listing">
+    <h2>Team Fortress 2 - <%= tf2Summary.title %></h2>
+    <div class="row align-items-left">
+        <div class="col-xl-4 order-xl-1">
+            <img src = '<%= tf2Image %>' class="preview">
+        </div>
+        <div class="col-xl-8 order-xl-2">
+            <p class="news-update"><%= tf2Info %></p>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid game-listing">
+    <h2>Monster Hunter Rise - <%= mhrSummary.title %></h2>
+    <div class="row align-items-left">
+        <div class="col-xl-4 order-xl-1">
+            <img src = '<%= mhrImage %>' class="preview">
+        </div>
+        <div class="col-xl-8 order-xl-2">
+            <p class="news-update"><%= mhrInfo %></p>
+        </div>
+    </div>
+</section>

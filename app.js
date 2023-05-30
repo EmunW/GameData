@@ -28,18 +28,22 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({extended: true}));
+app.use(methodOverride('_method'));
 
-
-const steamGamesRoutes = require('./routes/steamGames');
-app.use('/games', steamGamesRoutes);
-const playersRoutes = require('./routes/players');
-app.use('/players', playersRoutes);
+const steamGamesRoutes = require('./routes/featured');
+app.use('/featured', steamGamesRoutes);
+const playersRoutes = require('./routes/updates');
+app.use('/updates', playersRoutes);
 
 app.get('/', async (req, res) => {
+    /*
     const ret = await axios.get(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${steamKey}&steamids=76561198229001836`);
     const player = ret.data.response.players[0];
-    console.log(steamKey)
+    console.log(player.timecreated)
     res.render('home', {player});
+    */
+    res.render('home');
 })
 
 app.listen(3000, () => {

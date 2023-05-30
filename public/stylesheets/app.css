@@ -3,8 +3,8 @@ body{
     color: white;
 }
 
-.summary{
-    color: white;
+.news-update{
+    white-space: pre-line;
 }
 
 .lead{
@@ -24,4 +24,12 @@ body{
 
 .game-listing:nth-child(odd){
     background-color: rgb(22, 22, 68);
+}
+
+.preview{
+    width: 100%;
+}
+
+.info{
+    color: white;
 }

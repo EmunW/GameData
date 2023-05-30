@@ -1,3 +1,3 @@
 module.exports.getImages = (req, res) => {
-    res.render('steamGames/collection')
+    res.render('featured/games')
 }

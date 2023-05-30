@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const catchAsync = require('../utils/catchAsync');
-const playerController = require('../controllers/player');
+const featureController = require('../controllers/feature');
 
 
 router.route('/')
-    .get(catchAsync(playerController.getImages))
+    .get(featureController.getImages)
 
 module.exports = router;
