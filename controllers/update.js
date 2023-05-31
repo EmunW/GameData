@@ -10,7 +10,7 @@ module.exports.loadPage = async(req, res) => {
     let tf2Image = "";
 
     for(let i=0; i<tf2SplitContent.length; i++){
-        tf2SplitContent[i] = tf2SplitContent[i].replaceAll(/\[.+?]/g, "");
+        tf2SplitContent[i] = tf2SplitContent[i].replace(/\[.+?]/g, "");
         if(tf2SplitContent[i].includes('{STEAM_CLAN_IMAGE}')){
             tf2Image = tf2SplitContent[i].replace('{STEAM_CLAN_IMAGE}', 'https://clan.cloudflare.steamstatic.com/images/');
             continue;
@@ -30,7 +30,7 @@ module.exports.loadPage = async(req, res) => {
     let mhrImage = "";
 
     for(let i=0; i<mhrSplitContent.length; i++){
-        mhrSplitContent[i] = mhrSplitContent[i].replaceAll(/\[.+?]/g, "");
+        mhrSplitContent[i] = mhrSplitContent[i].replace(/\[.+?]/g, "");
         if(mhrSplitContent[i].includes('{STEAM_CLAN_IMAGE}')){
             mhrImage = mhrSplitContent[i].replace('{STEAM_CLAN_IMAGE}', 'https://clan.cloudflare.steamstatic.com/images/');
             continue;
@@ -41,8 +41,6 @@ module.exports.loadPage = async(req, res) => {
         }
     }
 
-    console.log(tf2SplitContent);
-    console.log(tf2Info);
     res.render('updates/index', {tf2Summary, tf2Image, tf2Info, mhrSummary, mhrImage, mhrInfo})
 
     /*const tf2Data = await axios.get(`https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=440&count=1`);

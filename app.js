@@ -6,8 +6,6 @@ const axios = require('axios');
 require('dotenv').config() // Require the dotenv package (Takes the variables defined in the .env file and adds them to process.env)
 const steamKey = process.env.STEAM_KEY;
 
-const dbUrl = 'mongodb://localhost:27017/game-data' // Development database
-
 /*mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
